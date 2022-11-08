@@ -1,22 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
-function App() {
+const HeaderText = (props) => {
+  return (
+  <div>
+    <p className='header-name'>{props.name}</p>
+    <p className='header-text'>{props.text}</p>
+  </div>
+  )
+}
+
+const App = () => {
+  const name = 'Kristján Sigurðsson'
+  const text = 'Þjónustufulltrúi, Nemandi, Knattspyrnuahugamaður'
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HeaderText name={name} text={text} />
       </header>
     </div>
   );
