@@ -58,9 +58,12 @@
   border-radius: 100%;
 }
 
-.header {
-  
+.line {
+  background-color: #61dafb;
+  color: #61dafb;
+  border-color: #61dafb;
+  height: 4px;
+  width: 100%;
 }
-
 
 

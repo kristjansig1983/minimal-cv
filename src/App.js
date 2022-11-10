@@ -40,6 +40,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <HeaderText className='header' name={myCv.name} text={myCv.text} />
+        <hr className='line'/>
         <p className='job-name'>{myCv.jobs[0].name}</p>
         <p className='job-time'>{myCv.jobs[0].time}</p>
         <p className='job-text'>{myCv.jobs[0].text}</p>
